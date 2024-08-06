@@ -12,7 +12,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "eazybytes/configserver:s10"
+    image: "huynhtri998/configserver:s10"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -27,7 +27,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "eazybytes/eurekaserver:s10"
+    image: "huynhtri998/eurekaserver:s10"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -47,7 +47,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   accounts:
-    image: "eazybytes/accounts:s10"
+    image: "huynhtri998/accounts:s10"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -69,7 +69,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "eazybytes/loans:s10"
+    image: "huynhtri998/loans:s10"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -91,7 +91,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "eazybytes/cards:s10"
+    image: "huynhtri998/cards:s10"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -113,7 +113,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "eazybytes/gatewayserver:s10"
+    image: "huynhtri998/gatewayserver:s10"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
